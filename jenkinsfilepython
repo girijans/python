@@ -1,0 +1,15 @@
+pipeline {
+    agent any 
+    stages {
+        stage('checkout') {
+	     steps {
+	        git 'https://github.com/girijans/python.git'
+	    }
+	}
+	stage('Run script') {
+	     steps {
+	        sh 'python str.py'
+	     }
+	}
+    }
+}
