@@ -1,0 +1,15 @@
+print(10 * 2)
+print("ha" * 3)
+print("hellow" + "  there?")
+print("ha" * 0)
+print("ha" * -2)
+print(int("22"))
+print(str(22))
+print(int(22))
+print(str("22"))
+Num=input("enter a num: ")
+print(Num * 3)
+print(int(Num) * 3)
+x=5
+y="sally"
+print(str(x)+y)
