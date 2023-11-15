@@ -3,12 +3,13 @@ pipeline {
     stages {
         stage('checkout') {
 	     steps {
-	        git branch: 'main', credentialsId: 'python', url: 'https://github.com/girijans/python.git'
+	        git branch: 'main', credentialsId: 'admin', url: 'https://github.com/girijans/python.git'
 	     }
 	}
 	stage('Run script') {
 	     steps {
 	        sh 'python str.py'
+		sh 'python typecast.py'
 	     }
 	}
     }
