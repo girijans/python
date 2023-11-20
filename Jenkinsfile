@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('checkout') {
 	     steps {
-	        git branch: 'main', credentialsId: 'admin', url: 'https://github.com/girijans/python.git'
+	        sh 'ls'
+                sh 'ls -altr'
 	     }
 	}
 	stage('Run script') {
